@@ -2,7 +2,7 @@
 let date = "Monday 2019-03-18";
 let time = "10:05:34 AM";
 let astronautCount = 7;
-let astronautStatus = "ready";
+let astronautStatus = " not ready";
 let averageAstronautMassKg = 80.7;
 let crewMassKg = (astronautCount * averageAstronautMassKg);
 let fuelMassKg = 760000;
@@ -20,7 +20,7 @@ console.log(date + "\n" + time);
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
 if (astronautCount <= 7)
 {
-    console.log(`Astronaut count: ${astronautCount}`);
+    console.log(`Astronaut count: ${astronautCount}`)
 
 // add logic below to verify all astronauts are ready
     if (astronautStatus === "ready")
@@ -44,8 +44,24 @@ if (astronautCount <= 7)
                 }
                 // Verify shuttle launch can proceed based on above conditions
             }
+            else
+{
+    console.log("Launch scrubbed");
+}
         }
+        else
+{
+    console.log("Launch scrubbed");
+}
     }
+    else
+{
+    console.log("Launch scrubbed");
+}
+}
+else
+{
+    console.log("Launch scrubbed");
 }
 }
 else
