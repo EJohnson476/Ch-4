@@ -12,7 +12,7 @@ initals = (language.slice(0,1) + language.slice(4,5));
 console.log(`The abbreviation for ${language} is ${initals}`);
 //4. Just for fun, try chaining 3 or more methods together, and then print the result
 language = language.toUpperCase();
-language = (language.substring(language.search("J"),language.search("S"))); //(language.search("J"),language.search("a"))));
+language = (language.substring(language.search("J"),language.search("S"))); 
 console.log(language);
 //Part Three section Two
 
