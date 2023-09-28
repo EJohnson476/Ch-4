@@ -42,6 +42,7 @@ console.log(reverseCharacters(re));
 
 // 1. Define and initialize an empty array.
 let arr = []
+let reversed = [];
 // 2. Loop through the old array.
 // 3. For each element in the old array, call reverseCharacters to flip the characters or digits.
 let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
@@ -50,8 +51,8 @@ let arrayTest3 = ['hello', 'world', 123, 'orange'];
 
     for (let i = 0; i < arrayTest3.length; i++)
     {
-        arr.push(reverseCharacters(arrayTest3[i]));
-        arr = arr.reverse();
+        arr.unshift(reverseCharacters(arrayTest3[i]));
+        //arr = reversed.push(arrayTest1[i]);
     }
     console.log(arr);
 // 4. Add the reversed string (or number) to the array defined in part ‘a’.
