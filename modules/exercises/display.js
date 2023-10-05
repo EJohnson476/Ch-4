@@ -1,5 +1,5 @@
 //TODO: Export ONLY the printAll function.
-module.export = printAll;
+module.exports = printAll;
 
 function printAll(names, tests, scores){
   let header = 'Name';
